@@ -80,7 +80,7 @@ public:
 	ofxGuiMenuColor_(ofParameter<ofColor_<ColorType>> &value, const ofJson & config = ofJson());
 	~ofxGuiMenuColor_();
 
-	ofAbstractParameter & getParameter();
+	ofAbstractParameter & getParameter() override;
 
 	ofColor_<ColorType> operator=(const ofColor_<ColorType> & v);
 	operator const ofColor_<ColorType> & ();
